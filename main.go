@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/infraflakes/sfind/cmd"
+	"github.com/infraflakes/srn-find/cmd"
 )
 
 func main() {

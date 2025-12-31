@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	"github.com/infraflakes/sfind/pkg/find"
+	"github.com/infraflakes/srn-find/pkg/find"
 	"github.com/spf13/cobra"
 )
 
