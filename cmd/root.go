@@ -1,0 +1,21 @@
+package cmd
+
+import (
+	"github.com/infraflakes/sfind/pkg/find"
+	"github.com/spf13/cobra"
+)
+
+var RootCmd = &cobra.Command{
+	Use:   "find",
+	Short: "Search for words, files, or directories",
+}
+
+func Execute() error {
+	return RootCmd.Execute()
+}
+
+func init() {
+	RootCmd.AddCommand(find.WordCmd)
+	RootCmd.AddCommand(find.FileCmd)
+	RootCmd.AddCommand(find.DirCmd)
+}
