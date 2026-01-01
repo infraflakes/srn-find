@@ -49,7 +49,7 @@ var WordDeleteCmd = cli.NewCommand(
 				fmt.Println(line)
 			}
 
-			if cli.Confirm("⚠️  Delete matched files? (y/N): ") {
+			if cli.Confirm("Delete matched files? (y/N): ") {
 				DeleteGrepMatches(path, term)
 			}
 		}

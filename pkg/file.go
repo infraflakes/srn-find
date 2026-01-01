@@ -1,8 +1,8 @@
 package pkg
 
 import (
-	"github.com/spf13/cobra"
 	"github.com/infraflakes/srn-libs/cli"
+	"github.com/spf13/cobra"
 )
 
 var FileCmd = cli.NewCommand(
@@ -12,7 +12,7 @@ var FileCmd = cli.NewCommand(
 	func(cmd *cobra.Command, args []string) {
 		path := args[0]
 		terms := args[1:]
-		FindAndProcess(path, terms, "f", "📄 Searching for files with '%s' in %s\n", "⚠️  Delete matched files? (y/N): ", false)
+		FindAndProcess(path, terms, "f", "Searching for files with '%s' in %s\n", "Delete matched files? (y/N): ", false)
 	},
 )
 
@@ -23,7 +23,7 @@ var FileDeleteCmd = cli.NewCommand(
 	func(cmd *cobra.Command, args []string) {
 		path := args[0]
 		terms := args[1:]
-		FindAndProcess(path, terms, "f", "📄 Searching for files with '%s' in %s\n", "⚠️  Delete matched files? (y/N): ", true)
+		FindAndProcess(path, terms, "f", "Searching for files with '%s' in %s\n", "Delete matched files? (y/N): ", true)
 	},
 )
 
