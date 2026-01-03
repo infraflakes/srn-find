@@ -1,8 +1,8 @@
 package pkg
 
 import (
-	"github.com/spf13/cobra"
 	"github.com/infraflakes/srn-libs/cli"
+	"github.com/spf13/cobra"
 )
 
 var DirCmd = cli.NewCommand(
