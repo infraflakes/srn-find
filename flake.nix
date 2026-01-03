@@ -23,6 +23,9 @@
           pkgs.buildGoModule {
             pname = "sfind";
             inherit version src;
+            preBuild = ''
+              export CGO_ENABLED=0
+            '';
             vendorHash = "sha256-3LL9r3xDPFRSFz9T32h9gt3lkbctO5XntnClkpbJWOg="; # Update if source changes
             ldflags = [
               "-s"
